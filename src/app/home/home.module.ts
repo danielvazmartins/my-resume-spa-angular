@@ -3,6 +3,7 @@ import { CommonModule } from "@angular/common";
 
 import { HomeComponent } from "./home.component";
 import { FooterModule } from "../shared/components/footer/footer.module";
+import { SignUpModule } from "../shared/components/sign-up/sign-up.module";
 
 @NgModule({
     declarations: [
@@ -10,7 +11,8 @@ import { FooterModule } from "../shared/components/footer/footer.module";
     ],
     imports: [
         CommonModule,
-        FooterModule
+        FooterModule,
+        SignUpModule
     ],
     exports: [
         HomeComponent

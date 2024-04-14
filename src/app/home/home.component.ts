@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { SignUpService } from "../shared/components/sign-up/sign-up.service";
 
 @Component({
     selector: 'app-home',
@@ -6,6 +7,14 @@ import { Component } from "@angular/core";
     styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-    register() {}
+
+    constructor(
+        private signUpService: SignUpService
+    ) {}
+
     login() {}
+
+    signUp() {
+        this.signUpService.showPopUp()
+    }
 }
