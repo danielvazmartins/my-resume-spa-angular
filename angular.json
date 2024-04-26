@@ -70,7 +70,8 @@
               "browserTarget": "my-resume-spa-angular:build:production"
             },
             "development": {
-              "browserTarget": "my-resume-spa-angular:build:development"
+              "browserTarget": "my-resume-spa-angular:build:development",
+              "proxyConfig": "src/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
